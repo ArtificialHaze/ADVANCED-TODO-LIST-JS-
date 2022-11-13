@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
+
+    <link rel="stylesheet" href="./index.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Select a Task</h1>
+      <div class="task__container">
+        <div class="task__name" id="break" style="background-color: #f7f779">
+          Break
+        </div>
+        <div class="task__name" id="gym" style="background-color: #f68080">
+          Gym
+        </div>
+        <div class="task__name" id="study" style="background-color: #faae7b">
+          Study
+        </div>
+        <div class="task__name" id="pc" style="background-color: #2a9d8f">
+          Computer
+        </div>
+        <div class="task__name" id="friends" style="background-color: #a8dadc">
+          Friends
+        </div>
+        <div class="task__name" id="work" style="background-color: #bdb2ff">
+          Work
+        </div>
+        <div class="task__name" id="deselect">Deselect</div>
+      </div>
+      <h3>Add a Task</h3>
+      <div class="schedule__container">
+        <div class="days__container">
+          <span class="corner"></span>
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">Thursday</div>
+          <div class="day">Friday</div>
+          <div class="day">Saturday</div>
+          <div class="day">Sunday</div>
+        </div>
+        <div class="part__day">
+          <span class="time"
+            >08:00AM <br />
+            - <br />
+            12:00PM</span
+          >
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+        </div>
+        <div class="part__day">
+          <span class="time"
+            >12:00PM <br />
+            - <br />
+            14:00PM</span
+          >
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+        </div>
+        <div class="part__day">
+          <span class="time"
+            >14:00PM <br />
+            - <br />
+            18:00PM</span
+          >
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+        </div>
+        <div class="part__day">
+          <span class="time"
+            >18:00PM <br />
+            - <br />
+            21:00PM</span
+          >
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+        </div>
+        <div class="part__day">
+          <span class="time"
+            >21:00PM <br />
+            - <br />
+            23:00PM</span
+          >
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+          <div class="task"></div>
+        </div>
+      </div>
+      <button class="deleteBtn">Reset</button>
+      <div class="pop-up__container">
+        <div class="pop-up">
+          <h4>Delete all tasks?</h4>
+          <div class="btn__container">
+            <div class="btn__answer" id="btn__answer-yes">Yes</div>
+            <div class="btn__answer" id="btn__answer-no">No</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+  <!-- <script src="./main.js"></script> -->
+</html>
